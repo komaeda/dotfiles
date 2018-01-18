@@ -1,0 +1,1 @@
+/home/liv/.config/fisherman/autojump/completions/j.fish

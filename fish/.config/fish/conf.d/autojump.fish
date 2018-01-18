@@ -1,0 +1,1 @@
+/home/liv/.config/fisherman/autojump/conf.d/autojump.fish
