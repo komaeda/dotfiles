@@ -113,3 +113,5 @@ mode "resize" {
   bindsym Return mode "default"
   bindsym Escape mode "default"
 }
+
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
