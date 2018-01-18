@@ -96,7 +96,7 @@ label = %percentage_used%%
 type = internal/date
 interval = 5
 
-date = "%U   %y-%m-%d   "
+date = "%d %b %Y   "
 time = %H:%M
 
 format-prefix-foreground = ${colors.foreground}
