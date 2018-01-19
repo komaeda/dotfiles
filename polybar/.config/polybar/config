@@ -39,7 +39,7 @@ font-5 = "FreeSans:pixelsize=12;3"
 
 fixed-center = true
 
-modules-left = i3 tmux
+modules-left = i3
 modules-center = weather
 modules-right = cpu memory date
 
@@ -102,11 +102,6 @@ time = %H:%M
 format-prefix-foreground = ${colors.foreground}
 
 label = %date% %time%
-
-[module/tmux]
-type = custom/script
-interval = 3
-exec = $HOME/.config/polybar/tmux.sh
 
 [module/weather]
 type = custom/script
