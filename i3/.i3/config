@@ -27,6 +27,9 @@ floating_modifier $mod
 gaps inner 10
 smart_gaps on
 
+# screenshot stuff
+bindsym $mod+shift+s exec maim -s ~/Pictures/screenshots/$(date +%s).png
+
 # Start a terminal
 bindsym $mod+Return exec urxvt
 
