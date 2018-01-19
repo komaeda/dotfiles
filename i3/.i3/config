@@ -125,3 +125,4 @@ mode "resize" {
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec ~/.fehbg 
 exec_always compton -cC
+exec xinput set-button-map 12 1 2 3 4 5 6 7 8 2 10 11 12 13 14 15 16
