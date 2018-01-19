@@ -34,6 +34,10 @@ bindsym $mod+space exec rofi -show run
 bindsym $mod+Shift+space exec --no-startup-id "rofi -show drun -run-command 'gksudo {cmd}'"
 bindsym $mod+Tab exec rofi -show window
 
+# pulseaudio controls
+bindsym $mod+shift+period exec pulseaudio-ctl up
+bindsym $mod+shift+comma exec pulseaudio-ctl down
+
 # change focus
 bindsym $mod+$left focus left
 bindsym $mod+$down focus down
