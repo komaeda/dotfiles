@@ -10,7 +10,7 @@ set $up k
 set $right l
 
 # Window look
-for_window [class=".*"] title_format " %title"
+for_window [class="^.*"] border pixel 0
 new_window none
 # class                 border  backgr. text    indicator child_border
 client.focused          #2d2d2d #2d2d2d #d3c0c8 #2d2d2d   #2d2d2d
@@ -22,6 +22,10 @@ client.background       #2d2d2d
 
 # Enable Mouse
 floating_modifier $mod
+
+# gaps
+gaps inner 10
+smart_gaps on
 
 # Start a terminal
 bindsym $mod+Return exec urxvt
