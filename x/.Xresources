@@ -33,3 +33,4 @@
 
 URxvt.font: xft:Fira Code,Fira Code Retina:style=Retina,Regular
 URxvt.scrollBar: False
+URxvt.internalBorder: 30

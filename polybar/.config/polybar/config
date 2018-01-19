@@ -50,8 +50,6 @@ index-sort = true
 wrapping-scroll = false
 
 label-mode-padding = 2
-label-mode-foreground = ${colors.background}
-label-mode-background = ${colors.primary}
 
 underline-size = 2
 underline-color = ${colors.foreground}
