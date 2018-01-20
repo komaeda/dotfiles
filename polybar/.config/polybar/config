@@ -40,8 +40,8 @@ font-5 = "FreeSans:pixelsize=12;3"
 fixed-center = true
 
 modules-left = i3
-modules-center = weather
-modules-right = cpu memory volume date
+modules-center = date
+modules-right = cpu memory volume weather
 
 [module/i3]
 type = internal/i3
