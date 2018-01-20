@@ -30,6 +30,9 @@ smart_gaps on
 # screenshot stuff
 bindsym $mod+shift+s exec maim -s ~/Pictures/screenshots/$(date +%s).png
 
+# pause mpd
+bindsym $mod+shift+p exec mpc toggle
+
 # Start a terminal
 bindsym $mod+Return exec urxvt
 
