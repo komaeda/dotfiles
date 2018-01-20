@@ -47,34 +47,18 @@ modules-right = cpu memory date
 type = internal/i3
 format = <label-state> <label-mode>
 index-sort = true
-wrapping-scroll = false
+wrapping-scroll = true
+strip-wsnumbers = true
 
-label-mode-padding = 2
+label-mode-padding = 5
 
-underline-size = 2
-underline-color = ${colors.foreground}
-
-; focused = Active workspace on focused monitor
-label-focused = %index%
-label-focused-background = ${colors.foreground}
-label-focused-underline = ${colors.foreground}
-label-focused-foreground = ${colors.background}
-label-focused-padding = 2
-
-; unfocused = Inactive workspace on any monitor
-label-unfocused = %index%
-label-unfocused-foreground = ${colors.foreground}
-label-unfocused-padding = 2
-
-; visible = Active workspace on unfocused monitor
-label-visible = %index%
-label-visible-background = ${self.label-focused-background}
-label-visible-padding = ${self.label-focused-padding}
-
-; urgent = Workspace with urgency hint set
-label-urgent = %index%
-label-urgent-background = ${colors.alert}
-label-urgent-padding = 2
+label-unfocused-foreground = #aaaaaa
+label-unfocused-padding = 1
+label-visible-foreground = #aaaaaa
+label-visible-padding = 1
+label-focused-foreground = #ffffff00
+label-focused-padding = 1
+label-urgent-padding = 1
 
 [module/cpu]
 type = internal/cpu
