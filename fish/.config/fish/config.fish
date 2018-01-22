@@ -11,3 +11,7 @@ alias q "g add --all; and g commit; and g push"
 alias y "yaourt"
 alias slp "systemctl suspend"
 alias be "bundle exec"
+
+if command --search hub > /dev/null do
+  alias git "hub"
+end
