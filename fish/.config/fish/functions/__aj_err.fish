@@ -1,1 +1,0 @@
-/home/liv/.config/fisherman/autojump/functions/__aj_err.fish
