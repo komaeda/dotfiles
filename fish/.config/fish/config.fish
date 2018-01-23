@@ -15,3 +15,7 @@ alias be "bundle exec"
 if command --search hub > /dev/null do
   alias git "hub"
 end
+
+if command --search nvim > /dev/null do
+  alias vim "nvim"
+end
