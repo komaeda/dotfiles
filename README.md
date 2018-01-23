@@ -1,7 +1,5 @@
 My personal dotfiles. Managed using GNU `stow`. 
 
-- __emacs__: Configuration for Spacemacs, my preferred Emacs. Uses 
-  `spacemacs-base`, not the full distribution.
 - __fish__: My fish shell config. Requires fisherman and assumes Rust, Node.js
   using N, and Ruby using rbenv is installed.
 - __git__: Git config.
