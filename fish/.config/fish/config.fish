@@ -1,4 +1,3 @@
-set PATH ~/.rbenv/bin $PATH
 status --is-interactive; and source (rbenv init -|psub)
 set PATH ~/.cargo/bin $PATH
 set PATH /usr/local/anaconda3/bin $PATH
@@ -7,7 +6,7 @@ set PATH ~/.local/bin $PATH
 
 set PROJECTS ~/code
 
-alias editconfig "vim ~/dotfiles/fish/.config/fish/config.fish; and source ~/.config/fish/config.fish"
+alias editconfig "vim ~/code/oe/dotfiles/fish/.config/fish/config.fish; and source ~/.config/fish/config.fish"
 alias g "git"
 alias s "g status --short"
 alias t "tree . -L 3"
