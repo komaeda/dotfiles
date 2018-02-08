@@ -1,4 +1,3 @@
-tap "railwaycat/emacsmacport"
 tap "homebrew/core"
 tap "homebrew/bundle"
 tap "caskroom/fonts"
@@ -9,7 +8,6 @@ brew "ocaml"
 brew "cask"
 brew "erlang"
 brew "espeak"
-brew "exercism"
 brew "ffmpeg"
 brew "fish"
 brew "htop"
@@ -19,12 +17,9 @@ brew "mas"
 brew "neovim"
 brew "opam"
 brew "python"
-brew "r"
 brew "rbenv"
 brew "stow"
-brew "tldr"
 brew "tree"
-brew "railwaycat/emacsmacport/emacs-mac"
 cask "1password"
 cask "alfred"
 cask "anaconda"
@@ -34,30 +29,21 @@ cask "dat"
 cask "discord"
 cask "dropbox"
 cask "flux"
-cask "gitup"
 cask "google-chrome"
 cask "iterm2"
-cask "kap"
 cask "mactex"
 cask "postman"
-cask "qutebrowser"
 cask "slack"
 cask "spotify"
 cask "steam"
-cask "sublime-text"
-cask "swinsian"
-cask "toggl"
 cask "virtualbox"
 cask "visual-studio-code"
 cask "caskroom/fonts/font-iosevka"
 cask "caskroom/versions/firefox-beta"
-mas "Bear", id: 1091189122
-mas "Byword", id: 420212497
 mas "Fantastical 2", id: 975937182
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
-mas "Tweetbot", id: 557168941
 mas "Xcode", id: 497799835
