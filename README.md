@@ -8,3 +8,4 @@ Install using `stow -t ~ -S */`.
 - __git__: Git config.
 - __nvim__: NeoVim config, but can be used with plain Vim with a few
   alterations.
+- __tmux__: TMUX config.
