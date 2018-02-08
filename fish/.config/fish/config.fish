@@ -1,8 +1,15 @@
+function setpath
+  test -z $argv[1]; or return 1
+  if test -d $argv[1]
+    set PATH $argv[1] $PATH
+  end
+end
+
 status --is-interactive; and source (rbenv init -|psub)
-set PATH ~/.cargo/bin $PATH
-set PATH /usr/local/anaconda3/bin $PATH
-set PATH ~/n/bin $PATH
-set PATH ~/.local/bin $PATH
+setpath ~/.cargo/bin
+setpath /usr/local/anaconda3/bin
+setpath ~/n/bin
+setpath ~/.local/bin
 
 set PROJECTS ~/code
 
