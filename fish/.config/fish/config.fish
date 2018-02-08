@@ -12,6 +12,7 @@ setpath ~/n/bin
 setpath ~/.local/bin
 
 set PROJECTS ~/code
+set EDITOR vim
 
 alias editconfig "vim ~/code/oe/dotfiles/fish/.config/fish/config.fish; and source ~/.config/fish/config.fish"
 alias g "git"
