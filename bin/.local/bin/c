@@ -1,41 +1,30 @@
-#!/bin/sh
-# Taken from https://github.com/yoshuawuyts/dotfiles/blob/master/bin/c
+#!/usr/bin/env fish
 
-test -z "$1"
-if [ "$?" -eq 0 ]; then
-  echo "$1"
-  printf 'Usage: c <user/repo>\n'
+if test (count $argv) -eq 0
+  echo $argv[1]
+  printf "usage: c <user/repo>\n"
   exit 1
-fi
+end
 
-user="$(echo "$1" | sed 's|/.*||')"
-repo="$(echo "$1" | sed 's|.*/||')"
-projectdir="$PROJECTS/$1"
-userdir="$PROJECTS/$user"
+set user (echo $argv[1] | sed 's|/.*||')
+set repo (echo $argv[1] | sed 's|.*/||')
+set projectdir "$PROJECTS/$argv[1]"
+set userdir "$PROJECTS/$user"
 
-test -z "$PROJECTS"
-if [ "$?" -eq 0 ]; then
-printf 'PROJECTS env var was not set, exiting\n'
-exit 1
-fi
+if test -z $PROJECTS
+  printf "PROJECTS env var not set, exiting\n"
+  exit 1
+end
 
-boot_project () {
-  cd "$projectdir" || exit 1
+function clone_project
+  if test ! -d $userdir
+    mkdir $userdir
+  end
 
-  # only run tmux if not within tmux
-  test -z "$TMUX"
-  [ $? -eq 0 ] && mx
-}
-
-clone_project () {
-  [ ! -d "$userdir" ] && mkdir "$userdir"
-  cd "$userdir" || exit 1
+  cd $userdir; or exit 1
   git clone "git@github.com:$user/$repo.git"
-  boot_project
-}
+end
 
-if [ -d "$projectdir" ]; then
-  boot_project
-else
+if test ! -d $projectdir
   clone_project
-fi
+end
