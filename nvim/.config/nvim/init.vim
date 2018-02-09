@@ -85,6 +85,8 @@ let g:airline_right_sep = ''
 let g:airline#extensions#hunks#enabled = 0
 let g:airline#extensions#ale#enabled = 1
 
+let g:ctrlp_show_hidden = 1
+
 set signcolumn=yes
 let g:gitgutter_eager = 0
 let g:gitgutter_override_sign_column_highlight = 0
