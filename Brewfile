@@ -1,3 +1,4 @@
+tap "railwaycat/emacsmacport"
 tap "homebrew/core"
 tap "homebrew/bundle"
 tap "caskroom/fonts"
@@ -20,6 +21,7 @@ brew "python"
 brew "rbenv"
 brew "stow"
 brew "tree"
+brew "railwaycat/emacsmacport/emacs-mac", link: false
 cask "1password"
 cask "alfred"
 cask "anaconda"
