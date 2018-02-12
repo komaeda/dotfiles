@@ -10,4 +10,3 @@ Install using `stow -t ~ -S */`.
   alterations.
 - __spacemacs__: Spacemacs (extensions for GNU Emacs) configuration. Requires
   `~/.spacemacs` file to not exist.
-- __tmux__: TMUX config.
