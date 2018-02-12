@@ -1,11 +1,8 @@
 function setpath
-  test -z $argv[1]; or return 1
-  if test -d $argv[1]
-    set PATH $argv[1] $PATH
-  end
+  test -e $argv[1]; and set PATH $argv[1] $PATH 
 end
 
-status --is-interactive; and source (rbenv init -|psub)
+setpath ~/.rbenv/shims
 setpath ~/.cargo/bin
 setpath /usr/local/anaconda3/bin
 setpath ~/n/bin
