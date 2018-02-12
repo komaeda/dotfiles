@@ -12,7 +12,7 @@ setpath ~/n/bin
 setpath ~/.local/bin
 
 set PROJECTS ~/code
-set EDITOR vim
+set EDITOR "nvim"
 set USER "liv"
 
 alias editconfig "vim ~/code/oe/dotfiles/fish/.config/fish/config.fish; and source ~/.config/fish/config.fish"

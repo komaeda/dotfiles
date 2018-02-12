@@ -94,6 +94,7 @@ highlight Comment ctermbg=black
 highlight SignColumn ctermbg=black
 
 map <Leader>e :CtrlPBuffer<CR>
+map <Leader>r :CtrlP<CR>
 
 cmap w!! %!sudo tee > /dev/null %
 vnoremap < <gv

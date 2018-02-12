@@ -16,15 +16,18 @@ tmux list-sessions | cut -d ':' -f 1 | grep '^_shared$' > /dev/null
 if [ "$?" -ne 0 ]; then
   dotfilespath="/Users/$USER/code/$username/dotfiles"
   tmux new-session -d -s "_shared" -n 'dotfiles' -c "$dotfilespath"
-  tmux send-keys "$EDITOR" C-m
+  tmux send-keys "nvim" C-m
   tmux split-window -h -c "$dotfilespath"
   tmux resize-pane -R 10
 
   templatespath="/Users/$USER/code/$username/templates"
   tmux new-window -n 'templates' -c "$templatespath"
-  tmux send-keys "$EDITOR" C-m
+  tmux send-keys "nvim" C-m
   tmux split-window -h -c "$templatespath"
   tmux resize-pane -R 10
+
+  tmux new-window -n 'switcher'
+  tmux send-keys "tmux choose-client" C-m
 fi
 
 # create a new session if there isn't one already
@@ -35,13 +38,15 @@ if [ "$?" -ne 0 ]; then
     cd "$PROJECTS"/"$SESSION" || exit 1
   fi
   tmux new-session -s "$SESSION" -d -n ''
-  tmux send-keys "$EDITOR" C-p #':CtrlP' C-m
+  tmux send-keys "nvim" C-m ":CtrlP" C-m
   tmux split-window -h
   tmux resize-pane -R 10
   tmux select-window -t "$SESSION"
+  tmux link-window -s _shared:switcher -t 7
   tmux link-window -s _shared:dotfiles -t 6
   tmux link-window -s _shared:templates -t 5
   tmux select-window -t 1
+  tmux select-pane -t 0
 fi
 
 # attach to session
