@@ -3,3 +3,4 @@ fish/.config/fish/functions/
 fish/.config/fish/fishd.*
 fish/.config/fish/conf.d/
 tmux-*
+.DS_Store
