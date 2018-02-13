@@ -2,7 +2,7 @@
 (setq mouse-wheel-scroll-amount '(2 ((shift) . 1) ((control) . nil)))
 (setq mouse-wheel-progressive-speed nil)
 ;; set line height
-(setq-default line-spacing 2)
+(setq-default line-spacing 3)
 
 ;; enable font ligatures
 (let ((alist '((33 . ".\\(?:\\(?:==\\|!!\\)\\|[!=]\\)")

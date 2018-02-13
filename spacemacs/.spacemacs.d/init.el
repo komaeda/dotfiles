@@ -32,8 +32,8 @@
    dotspacemacs-themes '(spacemacs-dark
                          spacemacs-light)
    dotspacemacs-colorize-cursor-according-to-state t
-   dotspacemacs-default-font '("Fira Code"
-                               :size 14
+   dotspacemacs-default-font '("Monoid"
+                               :size 15
                                :weight normal
                                :width normal
                                :powerline-scale 1.1)
