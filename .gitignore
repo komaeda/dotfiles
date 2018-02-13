@@ -4,3 +4,4 @@ fish/.config/fish/fishd.*
 fish/.config/fish/conf.d/
 tmux-*
 .DS_Store
+spacemacs/.spacemacs.d/#*
