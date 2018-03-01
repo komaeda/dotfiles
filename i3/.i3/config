@@ -1,0 +1,134 @@
+set $mod Mod4
+
+# Font
+font pango:Noto Sans 12
+
+# Movement
+set $left h
+set $down j
+set $up k
+set $right l
+
+# Window look
+for_window [class="^.*"] border pixel 0
+new_window none
+# class                 border  backgr. text    indicator child_border
+client.focused          #2d2d2d #2d2d2d #d3c0c8 #2d2d2d   #2d2d2d
+client.focused_inactive #2d2d2d #2d2d2d #747369 #2d2d2d   #2d2d2d
+client.unfocused        #2d2d2d #2d2d2d #747369 #292d2e   #2d2d2d
+client.urgent           #f2777a #f2777a #2d2d2d #f2777a   #f2777a
+client.placeholder      #2d2d2d #2d2d2d #747369 #292d2e   #2d2d2d
+client.background       #2d2d2d
+
+# Enable Mouse
+floating_modifier $mod
+
+# gaps
+gaps inner 10
+smart_gaps on
+
+# screenshot stuff
+bindsym $mod+shift+s exec maim -s ~/Pictures/screenshots/$(date +%s).png
+
+# pause mpd
+bindsym $mod+shift+p exec mpc toggle
+
+# Start a terminal
+bindsym $mod+Return exec urxvt
+
+# Kill focused window
+bindsym $mod+Shift+q kill
+
+# Star thte program launcher
+bindsym $mod+space exec rofi -show run
+bindsym $mod+Shift+space exec --no-startup-id "rofi -show drun -run-command 'gksudo {cmd}'"
+bindsym $mod+Tab exec rofi -show window
+
+# pulseaudio controls
+bindsym $mod+shift+period exec pulseaudio-ctl up
+bindsym $mod+shift+comma exec pulseaudio-ctl down
+
+# change focus
+bindsym $mod+$left focus left
+bindsym $mod+$down focus down
+bindsym $mod+$up focus up
+bindsym $mod+$right focus right
+
+# Move focused window
+bindsym $mod+Shift+$left move left
+bindsym $mod+Shift+$down move down
+bindsym $mod+Shift+$up move up
+bindsym $mod+Shift+$right move right
+
+# Split in horizontal orientation
+bindsym $mod+b split h
+
+# split in vertical orientation
+bindsym $mod+v split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# focus the parent container
+bindsym $mod+a focus parent
+
+# move the currently focused window to the scratchpad
+bindsym $mod+Shift+minus move scratchpad
+
+# Show the next scratchpad window or hide the focused scratchpad window.
+# If there are multiple scratchpad windows, this command cycles through them.
+bindsym $mod+minus scratchpad show
+
+# switch to workspace
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 10
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+2 move container to workspace 2
+bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+5 move container to workspace 5
+bindsym $mod+Shift+6 move container to workspace 6
+bindsym $mod+Shift+7 move container to workspace 7
+bindsym $mod+Shift+8 move container to workspace 8
+bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+0 move container to workspace 10
+
+# reload the configuration file
+bindsym $mod+Shift+c reload
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+# exit i3 (logs you out of your X session)
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
+# resize window (you can also use the mouse for that)
+bindsym $mod+r mode "resize"
+mode "resize" {
+  bindsym $left   resize shrink width 5 px or 5 ppt
+  bindsym $down   resize grow height 5 px or 5 ppt
+  bindsym $up     resize shrink height 5 px or 5 ppt
+  bindsym $right  resize grow width 5 px or 5 ppt
+
+  # back to normal: Enter or Escape
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
+}
+
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec ~/.fehbg 
+exec_always compton -cC
+exec mpd
