@@ -40,8 +40,8 @@ font-5 = "FreeSans:pixelsize=12;3"
 fixed-center = true
 
 modules-left = i3
-modules-center = date
-modules-right = cpu memory volume weather
+modules-center = wireless
+modules-right = volume battery date
 
 [module/i3]
 type = internal/i3
@@ -60,19 +60,30 @@ label-focused-foreground = #ffffff00
 label-focused-padding = 1
 label-urgent-padding = 1
 
-[module/cpu]
-type = internal/cpu
-interval = 2
-format-prefix = "CPU "
-format-prefix-foreground = ${colors.foreground}
-label = %percentage%%
+[module/wireless]
+type = internal/network
+interface = wlp4s0
+interval = 3.0
 
-[module/memory]
-type = internal/memory
-interval = 2
-format-prefix = "Mem "
-format-prefix-foreground = ${colors.foreground}
-label = %percentage_used%%
+format-connected = <label-connected>
+label-connected = %essid%
+
+format-disconnected = offline
+
+[module/battery]
+type = internal/battery
+battery = BAT0
+adapter = AC
+full-at = 100
+
+time-format = %H:%M
+format-full = <label-full>
+format-charding = <label-charging>
+format-discharging = <label-discharging>
+
+label-discharging = %percentage%%
+label-charding = %percentage%%
+label-full = 100%
 
 [module/date]
 type = internal/date
@@ -102,7 +113,3 @@ bar-volume-fill-font = 2
 bar-volume-empty = -
 bar-volume-empty-font = 2
 
-[module/weather]
-type = custom/script
-interval = 120
-exec = ~/.config/polybar/weather.sh
