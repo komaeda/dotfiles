@@ -6,3 +6,4 @@ tmux-*
 .DS_Store
 spacemacs/.spacemacs.d/#*
 bin/.local/share
+nvim/.config/nvim/.netrwhist
