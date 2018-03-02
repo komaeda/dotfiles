@@ -5,3 +5,4 @@ fish/.config/fish/conf.d/
 tmux-*
 .DS_Store
 spacemacs/.spacemacs.d/#*
+bin/.local/share
