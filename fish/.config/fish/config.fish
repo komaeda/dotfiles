@@ -3,6 +3,7 @@ function setpath
 end
 
 setpath ~/.rbenv/shims
+setpath ~/.rbenv/bin
 setpath ~/.cargo/bin
 setpath /usr/local/anaconda3/bin
 setpath ~/n/bin
@@ -10,7 +11,7 @@ setpath ~/.local/bin
 
 set PROJECTS ~/code
 set EDITOR "nvim"
-set USER "liv"
+set USER "lu"
 set pure_symbol_prompt ">"
 
 alias editconfig "vim ~/code/oe/dotfiles/fish/.config/fish/config.fish; and source ~/.config/fish/config.fish"
