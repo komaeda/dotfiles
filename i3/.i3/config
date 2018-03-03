@@ -36,6 +36,9 @@ bindsym $mod+shift+p exec mpc toggle
 # Start a terminal
 bindsym $mod+Return exec urxvt
 
+# Start an editor instance
+bindsym $mod+shift+Return exec emacs
+
 # Kill focused window
 bindsym $mod+Shift+q kill
 
