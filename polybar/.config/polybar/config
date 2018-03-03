@@ -75,14 +75,15 @@ type = internal/battery
 battery = BAT0
 adapter = AC
 full-at = 100
+poll-interval = 3
 
 time-format = %H:%M
 format-full = <label-full>
-format-charding = <label-charging>
+format-charging = <label-charging>
 format-discharging = <label-discharging>
 
 label-discharging = %percentage%%
-label-charding = %percentage%%
+label-charging = C %percentage%%
 label-full = 100%
 
 [module/date]
