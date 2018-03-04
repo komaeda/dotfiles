@@ -1,0 +1,24 @@
+# Sample minimal config file.  Copy this to ~/.offlineimaprc and edit to
+# get started fast.
+
+[general]
+accounts = main
+
+[Account main]
+localrepository = Local
+remoterepository = Remote
+
+[Repository Local]
+type = Maildir
+localfolders = ~/mail
+
+[Repository Remote]
+type = IMAP
+remotehost = imap.fastmail.com
+remoteuser = lun@fastmail.com
+remotepassfile = ~/.config/offlineimap/fastmail
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt
+ssl = yes
+expunge = no
+folderfilter = lambda foldername: foldername not in ['Trash']
+maxconnections = 3
