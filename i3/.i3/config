@@ -146,3 +146,4 @@ exec --no-startup-id xss-lock -- i3lock -n -i ~/.bgimg/current.png &
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec ~/.fehbg 
 exec_always compton -cC
+exec --no-startup-id unclutter &
