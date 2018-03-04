@@ -89,14 +89,14 @@ bindsym $mod+minus scratchpad show
 
 set $w1 1:Editor
 set $w2 2:Browser
-set $w3 3:Unused 1
-set $w4 4:Unused 2
-set $w5 5:Unused 3
-set $w6 6:Unused 4
-set $w7 7:Unused 5
-set $w8 8:Unused 6
-set $w9 9:Unused 7
-set $w10 10:Unused 8
+set $w3 3:Gaming
+set $w4 4:Unused 1
+set $w5 5:Unused 2
+set $w6 6:Unused 3
+set $w7 7:Unused 4
+set $w8 8:Unused 5
+set $w9 9:Unused 6
+set $w10 10:Unused 7
 
 # switch to workspace
 bindsym $mod+1 workspace $w1
