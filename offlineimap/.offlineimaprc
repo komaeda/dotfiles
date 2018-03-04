@@ -3,14 +3,16 @@
 
 [general]
 accounts = main
+maxsyncaccounts = 1
 
 [Account main]
 localrepository = Local
 remoterepository = Remote
+autorefresh = 1
 
 [Repository Local]
 type = Maildir
-localfolders = ~/mail
+localfolders = ~/Maildir
 
 [Repository Remote]
 type = IMAP
