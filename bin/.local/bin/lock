@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+tmp="/tmp/screen.png"
+
+import -window root "$tmp"
+convert "$tmp" -scale 10% -scale 1000% "$tmp"
+convert "$tmp" -fill "$white" -colorize 10% "$tmp"
+
+i3lock -i "$tmp"
