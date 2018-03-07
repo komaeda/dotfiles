@@ -11,8 +11,8 @@
      git
      markdown
      javascript
-     mu4e
      org
+     html
      )
    dotspacemacs-frozen-packages '()
    dotspacemacs-excluded-packages '()
