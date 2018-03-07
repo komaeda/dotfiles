@@ -58,6 +58,5 @@
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 2)
 
-;; disable js2 syntax checking
-(setq js2-mode-show-parse-errors nil)
-(setq js2-mode-show-strict-warnings nil)
+;; use web-mode for js instead of js2-mode
+(add-to-list 'auto-mode-alist '("\\.js\\'" . web-mode))
