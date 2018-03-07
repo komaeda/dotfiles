@@ -13,6 +13,7 @@
      javascript
      org
      html
+     rust
      )
    dotspacemacs-frozen-packages '()
    dotspacemacs-excluded-packages '()
