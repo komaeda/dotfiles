@@ -90,13 +90,13 @@ bindsym $mod+minus scratchpad show
 set $w1 1:Editor
 set $w2 2:Browser
 set $w3 3:Gaming
-set $w4 4:Comms
-set $w5 5:Unused 2
-set $w6 6:Unused 3
-set $w7 7:Unused 4
-set $w8 8:Unused 5
-set $w9 9:Unused 6
-set $w10 10:Unused 7
+set $w4 4:HDMI
+set $w5 5:Unused 1
+set $w6 6:Unused 2
+set $w7 7:Unused 3
+set $w8 8:Unused 4
+set $w9 9:Unused 5
+set $w10 10:Unused 6
 
 # switch to workspace
 bindsym $mod+1 workspace $w1
@@ -121,6 +121,8 @@ bindsym $mod+Shift+7 move container to workspace $w7
 bindsym $mod+Shift+8 move container to workspace $w8
 bindsym $mod+Shift+9 move container to workspace $w9
 bindsym $mod+Shift+0 move container to workspace $w10
+
+workspace "4:HDMI" output HDMI-1
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
