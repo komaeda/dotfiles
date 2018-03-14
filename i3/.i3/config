@@ -36,6 +36,8 @@ bindsym $mod+shift+p exec mpc toggle
 # Start a terminal
 bindsym $mod+Return exec urxvt
 
+bindsym $mod+shift+v exec /home/lu/.local/bin/lock
+
 # Start an editor instance
 bindsym $mod+shift+Return exec emacs
 
