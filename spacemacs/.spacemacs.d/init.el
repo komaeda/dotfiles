@@ -9,7 +9,7 @@
      ivy
      emacs-lisp
      git
-     markdown
+     (markdown :variables markdown-live-preview-engine 'vmd)
      javascript
      org
      html
