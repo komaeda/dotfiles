@@ -15,6 +15,7 @@
      html
      rust
      ruby
+     auto-completion
      )
    dotspacemacs-frozen-packages '()
    dotspacemacs-excluded-packages '()
