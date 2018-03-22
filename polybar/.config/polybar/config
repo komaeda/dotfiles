@@ -60,16 +60,6 @@ label-focused-foreground = #ffffff00
 label-focused-padding = 1
 label-urgent-padding = 1
 
-[module/wireless]
-type = internal/network
-interface = wlp4s0
-interval = 3.0
-
-format-connected = <label-connected>
-label-connected = %essid%
-
-format-disconnected = offline
-
 [module/battery]
 type = internal/battery
 battery = BAT0
