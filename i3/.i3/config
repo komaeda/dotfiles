@@ -24,8 +24,8 @@ client.background       #2d2d2d
 floating_modifier $mod
 
 # gaps
-gaps inner 10
-smart_gaps on
+# gaps inner 10
+# smart_gaps on
 
 # screenshot stuff
 bindsym $mod+shift+s exec maim -s ~/Pictures/screenshots/$(date +%s).png
