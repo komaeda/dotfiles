@@ -22,6 +22,8 @@ alias l "git log --color --graph --abbrev-commit --oneline"
 alias q "g add --all; and g commit; and g push"
 alias be "bundle exec"
 alias doc "docker-compose"
+alias rp "rustup"
+alias ca "cargo"
 
 if command --search hub > /dev/null do
   alias git "hub"
