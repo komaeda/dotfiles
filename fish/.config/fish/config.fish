@@ -12,6 +12,7 @@ setpath ~/.local/bin
 set PROJECTS ~/code
 set EDITOR "nvim"
 set USER "lu"
+set -x N_PREFIX ~/n
 set pure_symbol_prompt ">"
 
 alias editconfig "vim ~/code/oe/dotfiles/fish/.config/fish/config.fish; and source ~/.config/fish/config.fish"
