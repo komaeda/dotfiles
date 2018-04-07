@@ -2,7 +2,6 @@
   (setq-default
    dotspacemacs-distribution 'spacemacs-base
    dotspacemacs-enable-lazy-installation 'nil
-   ;; dotspacemacs-ask-for-lazy-installation t
    dotspacemacs-configuration-layer-path '()
    dotspacemacs-configuration-layers
    '(
