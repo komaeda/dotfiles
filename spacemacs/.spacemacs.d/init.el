@@ -5,16 +5,16 @@
    dotspacemacs-configuration-layer-path '()
    dotspacemacs-configuration-layers
    '(
-     ivy
+     auto-completion
      emacs-lisp
      git
-     (markdown :variables markdown-live-preview-engine 'vmd)
-     javascript
-     org
      html
-     rust
+     ivy
+     javascript
+     (markdown :variables markdown-live-preview-engine 'vmd)
+     org
      ruby
-     auto-completion
+     rust
      )
    dotspacemacs-frozen-packages '()
    dotspacemacs-excluded-packages '()
