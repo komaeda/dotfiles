@@ -21,6 +21,7 @@
    dotspacemacs-additional-packages
    '(
      solarized-theme
+     zenburn-theme
      brainfuck-mode
      )
    dotspacemacs-install-packages 'used-only))
@@ -38,7 +39,7 @@
                                 (projects . 7))
    dotspacemacs-startup-buffer-responsive t
    dotspacemacs-scratch-mode 'text-mode
-   dotspacemacs-themes '(solarized-dark)
+   dotspacemacs-themes '(zenburn)
    dotspacemacs-colorize-cursor-according-to-state t
    dotspacemacs-default-font '("Fira Code Medium"
                                :size 15
@@ -102,7 +103,7 @@
  '(evil-want-Y-yank-to-eol nil)
  '(package-selected-packages
    (quote
-    (rvm ruby-tools ruby-test-mode rubocop rspec-mode robe rbenv rake minitest chruby bundler inf-ruby brainfuck-mode langdoc chess org-category-capture org-present org-mime mu4e-maildirs-extension mu4e-alert ht clues-theme ghub let-alist toml-mode toc-org racer f org-bullets intero hlint-refactor hindent haskell-snippets flycheck-rust seq flycheck-haskell company-ghci company-ghc ghc haskell-mode company-cabal cmm-mode cargo rust-mode vmd-mode flycheck-pos-tip pos-tip flycheck fuzzy company-web web-completion-data company-tern dash-functional company-statistics company auto-yasnippet ac-ispell auto-complete web-mode tagedit slim-mode scss-mode sass-mode pug-mode less-css-mode haml-mode emmet-mode mmm-mode markdown-toc markdown-mode gh-md orgit smeargle magit-gitflow gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link evil-magit magit magit-popup git-commit with-editor org-projectile org-plus-contrib org-pomodoro alert log4e gntp org-download htmlize gnuplot tern apropospriate-theme web-beautify livid-mode skewer-mode simple-httpd json-mode json-snatcher json-reformat js2-refactor yasnippet multiple-cursors s js2-mode js-doc coffee-mode utop tuareg caml ocp-indent merlin which-key wgrep use-package smex pcre2el macrostep ivy-hydra hydra help-fns+ helm-make helm helm-core popup flx exec-path-from-shell evil-visualstar evil-escape evil goto-chg undo-tree elisp-slime-nav diminish counsel-projectile projectile pkg-info epl counsel swiper ivy bind-map bind-key auto-compile packed dash async ace-window avy)))
+    (zenburn-theme rvm ruby-tools ruby-test-mode rubocop rspec-mode robe rbenv rake minitest chruby bundler inf-ruby brainfuck-mode langdoc chess org-category-capture org-present org-mime mu4e-maildirs-extension mu4e-alert ht clues-theme ghub let-alist toml-mode toc-org racer f org-bullets intero hlint-refactor hindent haskell-snippets flycheck-rust seq flycheck-haskell company-ghci company-ghc ghc haskell-mode company-cabal cmm-mode cargo rust-mode vmd-mode flycheck-pos-tip pos-tip flycheck fuzzy company-web web-completion-data company-tern dash-functional company-statistics company auto-yasnippet ac-ispell auto-complete web-mode tagedit slim-mode scss-mode sass-mode pug-mode less-css-mode haml-mode emmet-mode mmm-mode markdown-toc markdown-mode gh-md orgit smeargle magit-gitflow gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link evil-magit magit magit-popup git-commit with-editor org-projectile org-plus-contrib org-pomodoro alert log4e gntp org-download htmlize gnuplot tern apropospriate-theme web-beautify livid-mode skewer-mode simple-httpd json-mode json-snatcher json-reformat js2-refactor yasnippet multiple-cursors s js2-mode js-doc coffee-mode utop tuareg caml ocp-indent merlin which-key wgrep use-package smex pcre2el macrostep ivy-hydra hydra help-fns+ helm-make helm helm-core popup flx exec-path-from-shell evil-visualstar evil-escape evil goto-chg undo-tree elisp-slime-nav diminish counsel-projectile projectile pkg-info epl counsel swiper ivy bind-map bind-key auto-compile packed dash async ace-window avy)))
  '(tab-stop-list nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
