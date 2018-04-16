@@ -50,15 +50,23 @@ index-sort = true
 wrapping-scroll = true
 strip-wsnumbers = true
 
-label-mode-padding = 5
+label-mode-padding = 2
+label-mode-foreground = ${colors.background}
+label-mode-background = ${colors.primary}
 
-label-unfocused-foreground = #aaaaaa
-label-unfocused-padding = 1
-label-visible-foreground = #aaaaaa
-label-visible-padding = 1
-label-focused-foreground = #ffffff00
-label-focused-padding = 1
-label-urgent-padding = 1
+label-focused = %name%
+label-focused-background = ${colors.foreground}
+label-focused-underline = ${colors.foreground}
+label-focused-foreground = ${colors.background}
+label-focused-padding = 2
+
+label-unfocused = %name%
+label-unfocused-foreground = ${colors.foreground}
+label-unfocused-padding = 2
+
+label-visible = %name%
+label-visible-background = ${self.label-focused-background}
+label-visible-padding = ${self.label-focused-padding}
 
 [module/battery]
 type = internal/battery
