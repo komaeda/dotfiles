@@ -25,8 +25,8 @@ alias be "bundle exec"
 alias doc "docker-compose"
 alias rp "rustup"
 alias ca "cargo"
-alias xauto "xrandr --auto"
-alias xalign "xrandr --output HDMI-1"
+alias xauto "xrandr --auto; ~/.fehbg"
+alias xalign "xrandr --output HDMI-1 --above eDP-1; ~/.fehbg"
 
 if command --search hub > /dev/null do
   alias git "hub"
