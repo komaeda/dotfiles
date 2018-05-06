@@ -5,7 +5,6 @@
    dotspacemacs-configuration-layer-path '()
    dotspacemacs-configuration-layers
    '(
-     auto-completion
      emacs-lisp
      git
      html
