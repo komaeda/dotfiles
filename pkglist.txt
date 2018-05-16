@@ -1,5 +1,3 @@
-arduino
-arduino-avr-core
 autoconf
 autojump
 automake
@@ -14,8 +12,6 @@ device-mapper
 dhcpcd
 dialog
 diffutils
-docker
-docker-compose
 dropbox
 dropbox-cli
 dwarffortress-lnp-git
@@ -72,7 +68,6 @@ man-db
 man-pages
 mdadm
 micropolis-java
-mu
 nano
 neovim
 netctl
@@ -91,7 +86,6 @@ pcmciautils
 pcsx2
 perl
 pkg-config
-platformio
 polybar
 procps-ng
 psmisc
