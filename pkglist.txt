@@ -1,3 +1,4 @@
+adobe-source-han-sans-cn-fonts
 autoconf
 autojump
 automake
@@ -31,6 +32,7 @@ flex
 gawk
 gcc
 gcc-libs
+gdmap
 gettext
 gimp
 git
@@ -42,6 +44,8 @@ htop
 hub
 i3-gaps
 i3lock
+ibus
+ibus-libpinyin
 imagemagick
 inetutils
 ino
@@ -129,6 +133,7 @@ xclip
 xfsprogs
 xorg-server
 xorg-xbacklight
+xorg-xmodmap
 xorg-xrandr
 xorg-xrdb
 xscreensaver

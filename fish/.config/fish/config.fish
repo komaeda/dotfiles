@@ -14,6 +14,9 @@ set EDITOR "nvim"
 set USER "lu"
 set -x N_PREFIX ~/n
 set pure_symbol_prompt ">"
+set GTK_IM_MODULE ibus
+set XMODIFIERS @im=ibus
+set QT_IM_MODULE ibus
 
 alias editconfig "vim ~/code/oe/dotfiles/fish/.config/fish/config.fish; and source ~/.config/fish/config.fish"
 alias g "git"
