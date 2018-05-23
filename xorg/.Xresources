@@ -37,3 +37,5 @@ URxvt.font: xft:Fira Code,Fira Code Retina:style=Retina,Regular
 URxvt.scrollBar: False
 URxvt.internalBorder: 30
 URxvt.perl-ext-common: default,matcher,clipboard
+URxvt.inputMethod: ibus
+URxvt.preeditType: OverTheSpot
