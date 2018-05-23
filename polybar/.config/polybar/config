@@ -13,6 +13,7 @@ primary = #ffb52a
 secondary = #e60053
 alert = #bd2c40
 bright-black = #747369
+focused = #001f3f
 
 [bar/top]
 bottom = false
@@ -64,7 +65,8 @@ label-unfocused-foreground = ${colors.foreground}
 label-unfocused-padding = 2
 
 label-visible = %name%
-label-visible-background = ${self.label-focused-background}
+label-visible-foreground = ${colors.foreground}
+label-visible-background = ${colors.focused}
 label-visible-padding = ${self.label-focused-padding}
 
 [module/battery]
