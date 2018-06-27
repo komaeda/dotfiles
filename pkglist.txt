@@ -6,7 +6,6 @@ bison
 compton
 cups
 emacs
-erlang
 espeak
 evince
 fakeroot
@@ -16,7 +15,6 @@ fish
 flex
 gdmap
 gimp
-gitlab-runner
 grub
 htop
 hub
@@ -73,4 +71,3 @@ xorg-xrandr
 xorg-xrdb
 xscreensaver
 xss-lock
-yarn
