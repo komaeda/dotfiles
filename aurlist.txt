@@ -1,0 +1,17 @@
+dropbox-cli
+dwarffortress-lnp-git
+google-cloud-sdk
+ino
+leiningen
+lemongrab
+micropolis-java
+pcmciautils
+phantomjs-bin
+polybar
+pulseaudio-ctl
+servo-latest
+slack-desktop
+ssb-patchwork
+st
+visual-studio-code-bin
+yaourt
