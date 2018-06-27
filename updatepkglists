@@ -1,0 +1,4 @@
+#!/bin/sh
+
+listpkg > pkglist.txt
+listaur > aurlist.txt
