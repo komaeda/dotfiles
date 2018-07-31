@@ -44,6 +44,7 @@ patch
 pavucontrol
 pcsx2
 pkgconf
+postgresql
 psmisc
 redshift
 reiserfsprogs
@@ -62,6 +63,7 @@ unclutter
 unzip
 usbutils
 vi
+viewnior
 vim
 xfsprogs
 xorg-server
