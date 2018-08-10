@@ -7,6 +7,8 @@
 ;; disable creation of backup files
 (setq make-backup-files nil)
 
+(setq-default require-final-newline t)
+
 ;; js config stuff
 (setq-default
  css-indent-offset 2
