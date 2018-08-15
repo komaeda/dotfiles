@@ -91,9 +91,9 @@ bindsym $mod+minus scratchpad show
 
 set $w1 1:Editor
 set $w2 2:Browser
-set $w3 3:Gaming
-set $w4 4:Etc
-set $w5 5:Unused 1
+set $w3 3:Mails
+set $w4 4:Etc 1
+set $w5 5:Etc 2
 set $w6 6:Unused 2
 set $w7 7:Unused 3
 set $w8 8:Unused 4
