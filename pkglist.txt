@@ -24,6 +24,7 @@ iputils
 iw
 jfsutils
 jq
+kitty
 libyaml
 licenses
 logrotate
@@ -35,7 +36,6 @@ man-pages
 mdadm
 nano
 neovim
-netctl
 openssh
 otf-fira-code
 p7zip
@@ -53,9 +53,9 @@ screenfetch
 steam
 steghide
 stow
-sudo
 system-config-printer
 the_silver_searcher
+thunderbird
 time
 tp_smapi
 ttf-fira-code
@@ -65,6 +65,8 @@ usbutils
 vi
 viewnior
 vim
+vulkan-intel
+whois
 xfsprogs
 xorg-server
 xorg-xbacklight

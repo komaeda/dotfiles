@@ -1,12 +1,12 @@
 dropbox-cli
 dwarffortress-lnp-git
 google-cloud-sdk
-kmfl-keyboard-eurolatin
 leiningen
+netctl-gui
 pcmciautils
 phantomjs-bin
 polybar
 pulseaudio-ctl
-ttf-lao
 visual-studio-code-bin
 yaourt
+zeit-now-bin
