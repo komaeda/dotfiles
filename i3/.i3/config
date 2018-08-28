@@ -34,7 +34,7 @@ bindsym $mod+shift+s exec maim -s ~/Pictures/screenshots/$(date +%s).png
 bindsym $mod+shift+p exec mpc toggle
 
 # Start a terminal
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec kitty
 
 bindsym $mod+shift+v exec /home/lu/.local/bin/lock
 
