@@ -8,6 +8,7 @@ Install using `stow -t ~ -S */`.
   using N, and Ruby using rbenv is installed.
 - __git__: Git config.
 - __i3__: Configuration for i3, my window manager.
+- __kitty__: Configuration for my terminal emulator of choice, Kitty.
 - __nvim__: NeoVim config, but can be used with plain Vim with a few
   alterations.
 - __polybar__: Polybar config, a status bar that I use with i3.
