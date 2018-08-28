@@ -13,7 +13,7 @@ set PROJECTS ~/code
 set EDITOR "nvim"
 set USER "lu"
 set -x N_PREFIX ~/n
-set pure_symbol_prompt ">"
+set pure_symbol_prompt "sh"
 set GTK_IM_MODULE ibus
 set XMODIFIERS @im=ibus
 set QT_IM_MODULE ibus
