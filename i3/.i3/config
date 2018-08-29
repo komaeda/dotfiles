@@ -48,6 +48,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+space exec rofi -show run
 bindsym $mod+Shift+space exec --no-startup-id "rofi -show drun -run-command 'gksudo {cmd}'"
 bindsym $mod+Tab exec rofi -show window
+bindsym $mod+slash exec "~/.splatmoji/splatmoji type"
 
 # pulseaudio controls
 bindsym $mod+shift+period exec pulseaudio-ctl up
