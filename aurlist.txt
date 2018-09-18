@@ -1,12 +1,9 @@
 dropbox-cli
 dwarffortress-lnp-git
-google-cloud-sdk
 leiningen
 netctl-gui
 pcmciautils
-phantomjs-bin
 polybar
 pulseaudio-ctl
-visual-studio-code-bin
 yaourt
 zeit-now-bin
