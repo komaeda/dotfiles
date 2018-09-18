@@ -6,3 +6,7 @@
 (depends-on "telephone-line")
 (depends-on "zoom")
 (depends-on "evil")
+(depends-on "solarized-theme")
+(depends-on "autopair")
+(depends-on "magit")
+(depends-on "evil-magit")
