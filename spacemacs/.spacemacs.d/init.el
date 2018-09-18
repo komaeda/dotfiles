@@ -5,19 +5,19 @@
    dotspacemacs-configuration-layer-path '()
    dotspacemacs-configuration-layers
    '(
-     clojure
-     emacs-lisp
-     erlang
-     git
-     html
-     ibuffer
-     ivy
-     javascript
-     (markdown :variables markdown-live-preview-engine 'vmd)
-     org
-     ruby
-     rust
-     yaml
+     clojure ;; adds clojure language functionality
+     emacs-lisp ;; adds emacs lisp integration & support
+     erlang ;; adds erlang language functionality
+     git ;; adds magit and git integration
+     html ;; adds web-mode
+     ibuffer ;; adds ibuffer configuration
+     ivy ;; replaces helm with ivy
+     javascript ;; adds js2-mode
+     (markdown :variables markdown-live-preview-engine 'vmd) ;; adds markdown support with vmd as the default viewer
+     org ;; adds org mode support
+     ruby ;; adds ruby language support
+     rust ;; adds rust language integration
+     yaml ;; adds yaml language support
      )
    dotspacemacs-frozen-packages '()
    dotspacemacs-excluded-packages '()
