@@ -3,6 +3,7 @@ My personal dotfiles. Managed using GNU `stow`.
 Install using `stow -t ~ -S */`.
 
 - __bin__: Shell scripts that are otherwise useful.
+- __emacs__: My Emacs configuration.
 - __feh__: Holds my desktop background information.
 - __fish__: My fish shell config. Requires fisherman and assumes Rust, Node.js
   using N, and Ruby using rbenv is installed.
@@ -13,6 +14,4 @@ Install using `stow -t ~ -S */`.
   alterations.
 - __polybar__: Polybar config, a status bar that I use with i3.
 - __redshift__: Config for redshift, which dims my screen when it gets dark.
-- __spacemacs__: Spacemacs (extensions for GNU Emacs) configuration. Requires
-  `~/.spacemacs` file to not exist.
 - __xorg__: General X configuration, plus additional urxvt config.
