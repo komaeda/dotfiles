@@ -2,6 +2,7 @@ adobe-source-han-sans-cn-fonts
 autoconf
 autojump
 automake
+bind-tools
 bison
 compton
 cups
@@ -67,6 +68,7 @@ viewnior
 vim
 vulkan-intel
 whois
+xdotool
 xfsprogs
 xorg-server
 xorg-xbacklight
