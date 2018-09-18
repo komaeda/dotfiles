@@ -5,9 +5,7 @@
    dotspacemacs-configuration-layer-path '()
    dotspacemacs-configuration-layers
    '(
-     clojure ;; adds clojure language functionality
      emacs-lisp ;; adds emacs lisp integration & support
-     erlang ;; adds erlang language functionality
      git ;; adds magit and git integration
      html ;; adds web-mode
      ibuffer ;; adds ibuffer configuration
