@@ -1,0 +1,8 @@
+(source gnu)
+(source melpa)
+
+(depends-on "ivy")
+(depends-on "counsel")
+(depends-on "telephone-line")
+(depends-on "zoom")
+(depends-on "evil")

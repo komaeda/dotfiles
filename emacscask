@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+cd emacs/.emacs.d/
+cask
+cd -
+stow -t ~ -R emacs/

@@ -8,3 +8,4 @@ tmux-*
 spacemacs/.spacemacs.d/#*
 bin/.local/share
 nvim/.config/nvim/.netrwhist
+emacs/.emacs.d/.cask/
