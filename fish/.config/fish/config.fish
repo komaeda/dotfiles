@@ -8,6 +8,7 @@ setpath ~/.cargo/bin
 setpath /usr/local/anaconda3/bin
 setpath ~/n/bin
 setpath ~/.local/bin
+setpath ~/.cask/bin
 
 set PROJECTS ~/code
 set EDITOR "nvim"
