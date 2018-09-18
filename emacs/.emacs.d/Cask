@@ -10,3 +10,4 @@
 (depends-on "autopair")
 (depends-on "magit")
 (depends-on "evil-magit")
+(depends-on "which-key")

@@ -51,7 +51,8 @@
 
 ;; ZOOM CONFIGURATION
 
-(zoom-mode 1)
+(zoom-mode 0)
+(setq zoom-ignored-buffer-names '("which-key"))
 
 ;; EVIL CONFIGURATION
 
@@ -61,3 +62,8 @@
 
 (global-set-key (kbd "C-x g") 'magit-status)
 (require 'evil-magit) ;; no idea why this has to be required explicitly
+
+;; WHICH-KEY CONFIGURATION
+
+(which-key-mode)
+(which-key-setup-side-window-right)
