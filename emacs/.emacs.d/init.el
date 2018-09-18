@@ -60,4 +60,4 @@
 ;; MAGIT CONFIGURATION
 
 (global-set-key (kbd "C-x g") 'magit-status)
-(require 'evil-magit)
+(require 'evil-magit) ;; no idea why this has to be required explicitly
