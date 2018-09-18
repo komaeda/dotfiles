@@ -7,6 +7,8 @@
       scroll-step 1
       make-backup-files nil)
 (setq-default indent-tabs-mode nil)
+(setq mouse-wheel-scroll-amount '(1 ((shift) . 1)))
+(setq mouse-wheel-progressive-speed nil)
 (setq backup-directory-alist `((".*" . ,temporary-file-directory)))
 (setq auto-save-file-name-transforms `((".*" ,temporary-file-directory t)))
 
@@ -14,6 +16,7 @@
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 (auto-compression-mode t)
+(scroll-bar-mode -1)
 
 (if window-system
     (load-theme 'solarized-light t))
