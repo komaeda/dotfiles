@@ -67,3 +67,9 @@
 
 (which-key-mode)
 (which-key-setup-side-window-right)
+
+;; PROJECTILE CONFIGURATION
+
+(projectile-mode +1)
+(define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
+(counsel-projectile-mode)

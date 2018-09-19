@@ -11,3 +11,7 @@
 (depends-on "magit")
 (depends-on "evil-magit")
 (depends-on "which-key")
+(depends-on "cask-mode")
+(depends-on "rust-mode")
+(depends-on "projectile")
+(depends-on "counsel-projectile")
