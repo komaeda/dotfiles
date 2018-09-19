@@ -30,6 +30,18 @@
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 
+(defun split-window-right-and-focus ()
+  "Split the window horizontally and focus it."
+  (interactive)
+  (split-window-right)
+  (windmove-right))
+
+(defun split-window-below-and-focus ()
+  "Split the window vertically and focus it."
+  (interactive)
+  (split-window-below)
+  (windmove-down))
+
 ;; IVY CONFIGURATION
 
 (ivy-mode 1)
@@ -67,7 +79,13 @@
   "hk" 'describe-key
   "hf" 'describe-function
   "hv" 'describe-variable
-  "gs" 'magit-status)
+  "gs" 'magit-status
+  "wv" 'split-window-below
+  "wV" 'split-window-below-and-focus
+  "ws" 'split-window-right
+  "wS" 'split-window-right-and-focus
+  "wd" 'delete-window
+  "wD" 'delete-other-windows)
 
 ;; MAGIT CONFIGURATION
 
@@ -82,7 +100,8 @@
   "<SPC> f" "files"
   "<SPC> p" "projectile"
   "<SPC> h" "help"
-  "<SPC> g" "git")
+  "<SPC> g" "git"
+  "<SPC> w" "windows")
 
 ;; PROJECTILE CONFIGURATION
 
