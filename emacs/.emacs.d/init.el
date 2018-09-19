@@ -55,7 +55,19 @@
 
 ;; EVIL CONFIGURATION
 
+(global-evil-leader-mode)
 (evil-mode 1)
+(evil-leader/set-leader "<SPC>")
+(evil-leader/set-key
+  "<SPC>" 'counsel-M-x
+  "ff" 'find-file
+  "fs" 'save-some-buffers
+  "pp" 'counsel-projectile-switch-project
+  "pf" 'counsel-projectile-find-file
+  "hk" 'describe-key
+  "hf" 'describe-function
+  "hv" 'describe-variable
+  "gs" 'magit-status)
 
 ;; MAGIT CONFIGURATION
 
@@ -66,6 +78,11 @@
 
 (which-key-mode)
 (which-key-setup-side-window-right)
+(which-key-add-key-based-replacements
+  "<SPC> f" "files"
+  "<SPC> p" "projectile"
+  "<SPC> h" "help"
+  "<SPC> g" "git")
 
 ;; PROJECTILE CONFIGURATION
 
