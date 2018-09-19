@@ -85,7 +85,11 @@
   "ws" 'split-window-right
   "wS" 'split-window-right-and-focus
   "wd" 'delete-window
-  "wD" 'delete-other-windows)
+  "wD" 'delete-other-windows
+  "ww" 'other-window
+  "bd" 'kill-current-buffer
+  "bp" 'previous-buffer
+  "bn" 'next-buffer)
 
 ;; MAGIT CONFIGURATION
 
@@ -101,7 +105,8 @@
   "<SPC> p" "projectile"
   "<SPC> h" "help"
   "<SPC> g" "git"
-  "<SPC> w" "windows")
+  "<SPC> w" "windows"
+  "<SPC> b" "buffers")
 
 ;; PROJECTILE CONFIGURATION
 
