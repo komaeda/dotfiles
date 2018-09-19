@@ -24,9 +24,9 @@
 (set-terminal-coding-system 'iso-latin-1)
 
 (setq default-frame-alist
-      '((font . "Fira Code Medium 13")))
+      '((font . "Fira Code Medium 14")))
 (setq initial-frame-alist
-      '((font . "Fira Code Medium 13")))
+      '((font . "Fira Code Medium 14")))
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 
