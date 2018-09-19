@@ -45,8 +45,7 @@
       telephone-line-secondary-left-separator 'telephone-line-flat
       telephone-line-primary-right-separator 'telephone-line-flat
       telephone-line-secondary-right-separator 'telephone-line-flat
-      telephone-line-height 24
-      telephone-line-evil-use-short-tag t)
+      telephone-line-height 24)
 (telephone-line-mode 1)
 
 ;; ZOOM CONFIGURATION
