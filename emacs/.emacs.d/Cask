@@ -1,18 +1,31 @@
 (source gnu)
 (source melpa)
 
+;; base
 (depends-on "ivy")
 (depends-on "counsel")
-(depends-on "telephone-line")
-(depends-on "zoom")
 (depends-on "evil")
-(depends-on "evil-leader")
-(depends-on "solarized-theme")
-(depends-on "autopair")
-(depends-on "magit")
-(depends-on "evil-magit")
 (depends-on "which-key")
+(depends-on "projectile")
+
+;; visual enhancements
+(depends-on "telephone-line")
+(depends-on "solarized-theme")
+
+;; productivity
+(depends-on "autopair")
+(depends-on "zoom")
+
+;; git
+(depends-on "magit")
+
+;; modes
 (depends-on "cask-mode")
 (depends-on "rust-mode")
-(depends-on "projectile")
+
+;; evil plugins
+(depends-on "evil-leader")
+(depends-on "evil-magit")
+
+;; projectile plugins
 (depends-on "counsel-projectile")
