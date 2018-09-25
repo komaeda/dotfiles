@@ -42,6 +42,8 @@
   (split-window-below)
   (windmove-down))
 
+(autopair-global-mode)
+
 ;; LIGATURE SUPPORT
 
 (when (window-system)
