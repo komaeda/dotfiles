@@ -43,6 +43,7 @@
   (windmove-down))
 
 (autopair-global-mode)
+(setq js-indent-level 2)
 
 ;; LIGATURE SUPPORT
 
