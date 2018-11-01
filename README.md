@@ -1,6 +1,6 @@
 My personal dotfiles. Managed using GNU `stow`. 
 
-Install using `stow -t ~ -S */`.
+Install using `sudo sh install.sh`.
 
 - __bin__: Shell scripts that are otherwise useful.
 - __emacs__: My Emacs configuration.
@@ -10,6 +10,7 @@ Install using `stow -t ~ -S */`.
 - __git__: Git config.
 - __i3__: Configuration for i3, my window manager.
 - __kitty__: Configuration for my terminal emulator of choice, Kitty.
+- __nixos__: NixOS configuration, my operating system.
 - __nvim__: NeoVim config, but can be used with plain Vim with a few
   alterations.
 - __polybar__: Polybar config, a status bar that I use with i3.
