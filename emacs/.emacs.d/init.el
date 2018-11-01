@@ -24,9 +24,9 @@
 (set-terminal-coding-system 'iso-latin-1)
 
 (setq default-frame-alist
-      '((font . "Inconsolata 14")))
+      '((font . "Fira Code 14")))
 (setq initial-frame-alist
-      '((font . "Inconsolata 14")))
+      '((font . "Fira Code 14")))
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 
@@ -48,7 +48,7 @@
 ;; LIGATURE SUPPORT
 
 (when (window-system)
-  (set-frame-font "Inconsolata"))
+  (set-frame-font "Fira Code"))
 (let ((alist '((33 . ".\\(?:\\(?:==\\|!!\\)\\|[!=]\\)")
                (35 . ".\\(?:###\\|##\\|_(\\|[#(?[_{]\\)")
                (36 . ".\\(?:>\\)")

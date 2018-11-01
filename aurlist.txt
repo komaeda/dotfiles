@@ -1,9 +1,0 @@
-dropbox-cli
-dwarffortress-lnp-git
-leiningen
-netctl-gui
-pcmciautils
-polybar
-pulseaudio-ctl
-yaourt
-zeit-now-bin
