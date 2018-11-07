@@ -104,6 +104,19 @@
 
 ;; EVIL CONFIGURATION
 
+(defun f/kill-emacs ()
+  (interactive)
+  (save-some-buffers)
+  (kill-emacs))
+
+(defun f/find-dotfile ()
+  (interactive)
+  (find-file-existing "~/code/oe/dotfiles/emacs/.emacs.d/init.el"))
+
+(defun f/reload-dotfile ()
+  (interactive)
+  (load-file "~/code/oe/dotfiles/emacs/.emacs.d/init.el"))
+
 (global-evil-leader-mode)
 (evil-mode 1)
 (evil-leader/set-leader "<SPC>")
@@ -111,6 +124,8 @@
   "<SPC>" 'counsel-M-x
   "ff" 'find-file
   "fs" 'save-some-buffers
+  "fed" 'f/find-dotfile
+  "fer" 'f/reload-dotfile
   "pp" 'counsel-projectile-switch-project
   "pf" 'counsel-projectile-find-file
   "hk" 'describe-key
@@ -126,7 +141,9 @@
   "ww" 'other-window
   "bd" 'kill-current-buffer
   "bp" 'previous-buffer
-  "bn" 'next-buffer)
+  "bn" 'next-buffer
+  "qq" 'f/kill-emacs
+  "ss" 'swiper)
 
 ;; MAGIT CONFIGURATION
 
@@ -139,11 +156,14 @@
 (which-key-setup-side-window-right)
 (which-key-add-key-based-replacements
   "<SPC> f" "files"
+  "<SPC> f e" "emacs"
   "<SPC> p" "projectile"
   "<SPC> h" "help"
   "<SPC> g" "git"
   "<SPC> w" "windows"
-  "<SPC> b" "buffers")
+  "<SPC> b" "buffers"
+  "<SPC> q" "quit"
+  "<SPC> s" "search")
 
 ;; PROJECTILE CONFIGURATION
 
