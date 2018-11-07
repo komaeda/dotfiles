@@ -9,7 +9,6 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.kernelPackages = pkgs.linuxPackages_4_18;
-  nixpkgs.config.allowUnfree = true;
 
   networking.hostName = "luna"; 
   networking.networkmanager.enable = true;
@@ -28,6 +27,8 @@
   services.xserver.enable = true;
   services.xserver.windowManager.i3.enable = true;
   services.xserver.libinput.enable = true;
+
+  nixpkgs.config.allowUnfree = true;
 
   sound.enable = true;
   hardware.pulseaudio.enable = true;
