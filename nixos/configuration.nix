@@ -15,7 +15,7 @@
 
   fonts.enableDefaultFonts = true;
   fonts.enableFontDir = true;
-  fonts.fonts = [ pkgs.inconsolata pkgs.fira-code ];
+  fonts.fonts = [ pkgs.inconsolata pkgs.fira-code pkgs.noto-fonts-emoji ];
 
   time.timeZone = "Europe/Berlin";
 
@@ -27,6 +27,7 @@
   services.xserver.enable = true;
   services.xserver.windowManager.i3.enable = true;
   services.xserver.libinput.enable = true;
+  services.xserver.libinput.tapping = false;
 
   nixpkgs.config.allowUnfree = true;
 

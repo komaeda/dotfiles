@@ -6,9 +6,9 @@ setpath ~/.rbenv/shims
 setpath ~/.rbenv/bin
 setpath ~/.cargo/bin
 setpath /usr/local/anaconda3/bin
-setpath ~/n/bin
 setpath ~/.local/bin
 setpath ~/.cask/bin
+setpath ~/.npm-packages/bin
 
 set PROJECTS ~/code
 set EDITOR "nvim"
@@ -32,6 +32,7 @@ alias rp "rustup"
 alias ca "cargo"
 alias xauto "xrandr --auto; ~/.fehbg"
 alias xalign "xrandr --output HDMI-1 --above eDP-1; ~/.fehbg"
+alias mkt "cd (mktemp -d)"
 
 if command --search hub > /dev/null do
   alias git "hub"
