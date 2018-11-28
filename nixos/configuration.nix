@@ -15,7 +15,12 @@
 
   fonts.enableDefaultFonts = true;
   fonts.enableFontDir = true;
-  fonts.fonts = [ pkgs.inconsolata pkgs.fira-code pkgs.noto-fonts-emoji ];
+  fonts.fonts = [ pkgs.source-han-sans-simplified-chinese pkgs.inconsolata pkgs.fira-code pkgs.noto-fonts-emoji ];
+
+  i18n.inputMethod = {
+    enabled = "ibus";
+    ibus.engines = with pkgs.ibus-engines; [ libpinyin anthy hangul ];
+  };
 
   time.timeZone = "Europe/Berlin";
 

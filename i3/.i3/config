@@ -151,4 +151,6 @@ exec --no-startup-id xss-lock -- $HOME/.local/bin/lock &
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec ~/.fehbg 
 exec_always compton -CG
+exec_always xmodmap ~/.Xmodmap
+exec_always ibus-daemon
 exec --no-startup-id unclutter &
