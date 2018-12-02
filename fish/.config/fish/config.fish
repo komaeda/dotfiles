@@ -19,7 +19,8 @@ set GTK_IM_MODULE ibus
 set XMODIFIERS @im=ibus
 set QT_IM_MODULE ibus
 set GLFW_IM_MODULE ibus
-set LANG en_US
+set LANG en_US.UTF-8
+set LC_ALL en_US.UTF-8
 
 alias editconfig "vim ~/code/komaeda/dotfiles/fish/.config/fish/config.fish; and source ~/.config/fish/config.fish"
 alias g "git"
