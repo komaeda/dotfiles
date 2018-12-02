@@ -20,7 +20,7 @@ set XMODIFIERS @im=ibus
 set QT_IM_MODULE ibus
 set GLFW_IM_MODULE ibus
 
-alias editconfig "vim ~/code/oe/dotfiles/fish/.config/fish/config.fish; and source ~/.config/fish/config.fish"
+alias editconfig "vim ~/code/komaeda/dotfiles/fish/.config/fish/config.fish; and source ~/.config/fish/config.fish"
 alias g "git"
 alias s "g status --short"
 alias t "tree . -L 3"
@@ -34,6 +34,7 @@ alias ca "cargo"
 alias xauto "xrandr --auto; ~/.fehbg"
 alias xalign "xrandr --output HDMI-1 --above eDP-1; ~/.fehbg"
 alias mkt "cd (mktemp -d)"
+alias cr "crystal"
 
 if command --search hub > /dev/null do
   alias git "hub"
