@@ -111,11 +111,11 @@
 
 (defun f/find-dotfile ()
   (interactive)
-  (find-file-existing "~/code/oe/dotfiles/emacs/.emacs.d/init.el"))
+  (find-file-existing "~/code/komaeda/dotfiles/emacs/.emacs.d/init.el"))
 
 (defun f/reload-dotfile ()
   (interactive)
-  (load-file "~/code/oe/dotfiles/emacs/.emacs.d/init.el"))
+  (load-file "~/code/komaeda/dotfiles/emacs/.emacs.d/init.el"))
 
 (global-evil-leader-mode)
 (evil-mode 1)
