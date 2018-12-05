@@ -38,6 +38,7 @@ alias xauto "xrandr --auto; ~/.fehbg"
 alias xalign "xrandr --output HDMI-1 --above eDP-1; ~/.fehbg"
 alias mkt "cd (mktemp -d)"
 alias cr "crystal"
+alias ns "nix-shell --command fish"
 
 if command --search hub > /dev/null do
   alias git "hub"

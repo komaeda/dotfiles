@@ -1,0 +1,41 @@
+{ config, pkgs, ... }:
+
+{
+  environment.systemPackages = [
+    pkgs.binutils
+    pkgs.compton
+    pkgs.diff-so-fancy
+    pkgs.emacs
+    pkgs.feh
+    pkgs.fira-code
+    pkgs.firefox
+    pkgs.gcc-wrapper
+    pkgs.gdb
+    pkgs.git
+    pkgs.gnumake
+    pkgs.i3lock
+    pkgs.inconsolata
+    pkgs.kitty
+    pkgs.lm-sensors
+    pkgs.neovim
+    pkgs.network-manager-applet
+    pkgs.networkmanager-qt
+    pkgs.noto-fonts
+    pkgs.noto-fonts-emoji
+    pkgs.openssl
+    pkgs.pulseaudio-ctl
+    pkgs.python
+    pkgs.python3
+    pkgs.redshift
+    pkgs.rofi
+    pkgs.rustup
+    pkgs.source-han-sans-simplified-chinese
+    pkgs.stow
+    pkgs.thunderbird
+    pkgs.unclutter
+    pkgs.vim
+    pkgs.xclip
+    pkgs.xmodmap
+    pkgs.xss-lock
+  ]
+}
