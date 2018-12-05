@@ -28,7 +28,7 @@ set clipboard=unnamed
 set hidden
 set splitright
 set splitbelow
-set shell=/usr/bin/fish
+set shell=/run/current-system/sw/bin/fish
 set ttyfast
 set mouse=a
 
