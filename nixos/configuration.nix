@@ -33,6 +33,7 @@
   services.xserver.windowManager.i3.enable = true;
   services.xserver.libinput.enable = true;
   services.xserver.libinput.tapping = false;
+  services.postgresql.enable = true;
 
   nixpkgs.config.allowUnfree = true;
 
