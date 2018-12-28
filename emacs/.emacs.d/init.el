@@ -170,3 +170,8 @@
 (projectile-mode +1)
 (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
 (counsel-projectile-mode)
+
+;; MISC
+
+;; start eglot in rust-mode
+(add-hook 'rust-mode-hook 'eglot-ensure)

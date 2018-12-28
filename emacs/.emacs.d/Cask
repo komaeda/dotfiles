@@ -15,6 +15,8 @@
 ;; productivity
 (depends-on "autopair")
 (depends-on "zoom")
+(depends-on "eglot")
+(depends-on "company")
 
 ;; git
 (depends-on "magit")
