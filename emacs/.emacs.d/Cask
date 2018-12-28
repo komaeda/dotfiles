@@ -10,7 +10,7 @@
 
 ;; visual enhancements
 (depends-on "telephone-line")
-(depends-on "solarized-theme")
+(depends-on "afternoon-theme")
 
 ;; productivity
 (depends-on "autopair")

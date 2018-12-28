@@ -19,7 +19,7 @@
 (scroll-bar-mode -1)
 
 (if window-system
-    (load-theme 'solarized-light t))
+    (load-theme 'afternoon t))
 
 (set-terminal-coding-system 'iso-latin-1)
 
