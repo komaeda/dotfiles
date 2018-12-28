@@ -34,6 +34,7 @@
   services.xserver.libinput.enable = true;
   services.xserver.libinput.tapping = false;
   services.postgresql.enable = true;
+  services.udisks2.enable = true;
 
   nixpkgs.config.allowUnfree = true;
 

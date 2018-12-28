@@ -153,4 +153,5 @@ exec ~/.fehbg
 exec_always compton -CG
 exec_always xmodmap ~/.Xmodmap
 exec_always ibus-daemon
+exec_always udiskie &
 exec --no-startup-id unclutter &
