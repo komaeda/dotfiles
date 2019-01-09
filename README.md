@@ -16,5 +16,3 @@ Install using `sudo sh install.sh`.
 - __polybar__: Polybar config, a status bar that I use with i3.
 - __redshift__: Config for redshift, which dims my screen when it gets dark.
 - __xorg__: General X configuration, plus additional urxvt config.
-
-test
