@@ -25,6 +25,7 @@
 (depends-on "cask-mode")
 (depends-on "rust-mode")
 (depends-on "nix-mode")
+(depends-on "markdown-mode")
 
 ;; evil plugins
 (depends-on "evil-leader")
