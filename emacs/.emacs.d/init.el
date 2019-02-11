@@ -11,6 +11,7 @@
 (setq mouse-wheel-progressive-speed nil)
 (setq backup-directory-alist `((".*" . ,temporary-file-directory)))
 (setq auto-save-file-name-transforms `((".*" ,temporary-file-directory t)))
+(setq explicit-shell-file-name "/bin/fish")
 
 (global-hl-line-mode 1)
 (menu-bar-mode -1)
@@ -143,7 +144,8 @@
   "bp" 'previous-buffer
   "bn" 'next-buffer
   "qq" 'f/kill-emacs
-  "ss" 'swiper)
+  "ss" 'swiper
+  "sa" 'counsel-ag)
 
 ;; MAGIT CONFIGURATION
 
@@ -175,3 +177,6 @@
 
 ;; start eglot in rust-mode
 (add-hook 'rust-mode-hook 'eglot-ensure)
+;; start racer in rust-mode
+(add-hook 'rust-mode-hook 'racer-mode)
+(add-hook 'racer-mode-hook 'eldoc-mode)
