@@ -1,6 +1,6 @@
 [user]
-	name = liv
-	email = liv@fastmail.com
+	name = lyn
+	email = 819880950@qq.com 
 [core]
 	editor = nvim
         pager = diff-so-fancy | less --tabs=4 -RFX
@@ -10,3 +10,9 @@
 	rebase = true
 [rebase]
 	autoStash = true
+[sendemail]
+  from = 819880950@qq.com
+  smtpencryption = tls
+  smtpserver = smtp.qq.com
+  smtpuser = 819880950@qq.com
+  smtpserverport = 587
