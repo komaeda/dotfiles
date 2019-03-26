@@ -24,22 +24,28 @@ set LANG en_US.UTF-8
 set LC_ALL en_US.UTF-8
 set LANGUAGE en_US.UTF-8
 
+# General Aliases
 alias editconfig "vim ~/code/komaeda/dotfiles/fish/.config/fish/config.fish; and source ~/.config/fish/config.fish"
-alias g "git"
-alias s "g status --short"
 alias t "tree . -L 3"
-alias l "git log --color --graph --abbrev-commit --oneline"
-alias q "g add --all; and g commit; and g push"
 alias j "z"
+alias jo "zo"
 alias be "bundle exec"
 alias doc "docker-compose"
 alias rp "rustup"
 alias ca "cargo"
-alias xauto "xrandr --auto; ~/.fehbg"
-alias xalign "xrandr --output HDMI-1 --above eDP-1; ~/.fehbg"
 alias mkt "cd (mktemp -d)"
-alias cr "crystal"
-alias ns "nix-shell --command fish"
+# Git Aliases
+alias g "git"
+alias gs "g status --short"
+alias gl "g log --color --graph --abbrev-commit --oneline"
+alias gqp "g add --all; and g commit; and g push"
+alias gqc "g add --all; and g commit"
+alias gpl "g pull"
+alias gps "g push"
+alias gc "g commit"
+alias gaa "g add --all"
+alias gco "g checkout"
+alias gse "g send-email"
 
 if command --search hub > /dev/null do
   alias git "hub"
