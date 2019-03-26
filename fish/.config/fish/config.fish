@@ -1,7 +1,9 @@
+# Convenience function for only setting PATH if the specified directory exists
 function setpath
   test -e $argv[1]; and set PATH $argv[1] $PATH 
 end
 
+# PATH adjustment
 setpath ~/.rbenv/shims
 setpath ~/.rbenv/bin
 setpath ~/.cargo/bin
@@ -11,6 +13,7 @@ setpath ~/.cask/bin
 setpath ~/.npm-packages/bin
 setpath ~/n/bin
 
+# Environment variables
 set PROJECTS ~/code
 set EDITOR "nvim"
 set USER "lu"
@@ -47,6 +50,7 @@ alias gaa "g add --all"
 alias gco "g checkout"
 alias gse "g send-email"
 
+# Aliases that overwrite other, existing commands
 if command --search hub > /dev/null do
   alias git "hub"
 end
