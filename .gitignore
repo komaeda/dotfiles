@@ -3,6 +3,7 @@ fish/.config/fish/functions/
 fish/.config/fisherman/
 fish/.config/fish/fishd.*
 fish/.config/fish/conf.d/
+fish/.config/fish/private.fish
 tmux-*
 .DS_Store
 spacemacs/.spacemacs.d/#*

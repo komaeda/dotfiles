@@ -12,6 +12,10 @@ setpath ~/.local/bin
 setpath ~/.cask/bin
 setpath ~/.npm-packages/bin
 setpath ~/n/bin
+setpath ~/code/ph/arcanist/bin
+
+# Source private stuff
+source ~/.config/fish/private.fish
 
 # Environment variables
 set PROJECTS ~/code

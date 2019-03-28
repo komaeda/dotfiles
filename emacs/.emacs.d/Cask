@@ -19,7 +19,7 @@
 (depends-on "company")
 (depends-on "ag")
 
-;; git
+;; vcs
 (depends-on "magit")
 
 ;; modes
