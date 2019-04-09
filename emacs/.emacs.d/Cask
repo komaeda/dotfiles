@@ -15,7 +15,6 @@
 ;; productivity
 (depends-on "autopair")
 (depends-on "zoom")
-(depends-on "eglot")
 (depends-on "company")
 (depends-on "ag")
 
@@ -27,7 +26,6 @@
 (depends-on "rust-mode")
 (depends-on "nix-mode")
 (depends-on "markdown-mode")
-(depends-on "racer")
 
 ;; evil plugins
 (depends-on "evil-leader")
