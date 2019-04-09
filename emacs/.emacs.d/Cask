@@ -19,9 +19,6 @@
 (depends-on "company")
 (depends-on "ag")
 
-;; vcs
-(depends-on "magit")
-
 ;; modes
 (depends-on "cask-mode")
 (depends-on "rust-mode")
@@ -31,7 +28,6 @@
 
 ;; evil plugins
 (depends-on "evil-leader")
-(depends-on "evil-magit")
 
 ;; projectile plugins
 (depends-on "counsel-projectile")
