@@ -114,6 +114,7 @@
   "bd" 'kill-current-buffer
   "bp" 'previous-buffer
   "bn" 'next-buffer
+  "bb" 'ivy-switch-buffer
   "qq" 'f/kill-emacs
   "ss" 'swiper
   "sa" 'counsel-ag)
