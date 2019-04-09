@@ -132,6 +132,7 @@
   "hk" 'describe-key
   "hf" 'describe-function
   "hv" 'describe-variable
+  "gs" 'magit-status
   "wv" 'split-window-below
   "wV" 'split-window-below-and-focus
   "ws" 'split-window-right
@@ -145,6 +146,11 @@
   "qq" 'f/kill-emacs
   "ss" 'swiper
   "sa" 'counsel-ag)
+
+;; MAGIT CONFIGURATION
+
+(global-set-key (kbd "C-c g") 'magit-status)
+(require 'evil-magit) ;; no idea why this has to be required explicitly
 
 ;; WHICH-KEY CONFIGURATION
 
