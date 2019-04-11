@@ -7,6 +7,7 @@
       scroll-step 1
       make-backup-files nil)
 (setq-default indent-tabs-mode nil)
+(setq-default tab-width 2)
 (setq mouse-wheel-scroll-amount '(1 ((shift) . 1)))
 (setq mouse-wheel-progressive-speed nil)
 (setq backup-directory-alist `((".*" . ,temporary-file-directory)))
@@ -28,6 +29,7 @@
       '((font . "Fira Code 14")))
 (setq initial-frame-alist
       '((font . "Fira Code 14")))
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 
