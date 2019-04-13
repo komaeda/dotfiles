@@ -13,6 +13,7 @@
 (setq backup-directory-alist `((".*" . ,temporary-file-directory)))
 (setq auto-save-file-name-transforms `((".*" ,temporary-file-directory t)))
 (setq explicit-shell-file-name "/bin/fish")
+(setq mac-command-modifier 'control)
 
 (global-hl-line-mode 1)
 (menu-bar-mode -1)
@@ -26,9 +27,9 @@
 (set-terminal-coding-system 'iso-latin-1)
 
 (setq default-frame-alist
-      '((font . "Fira Code 14")))
+      '((font . "Fira Code 16")))
 (setq initial-frame-alist
-      '((font . "Fira Code 14")))
+      '((font . "Fira Code 16")))
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
 (defalias 'yes-or-no-p 'y-or-n-p)
