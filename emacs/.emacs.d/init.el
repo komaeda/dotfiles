@@ -26,10 +26,13 @@
 
 (set-terminal-coding-system 'iso-latin-1)
 
-(setq default-frame-alist
-      '((font . "Fira Code 16")))
 (setq initial-frame-alist
       '((font . "Fira Code 16")))
+
+(if (eq system-type 'darwin)
+    (setq initial-frame-alist
+          '((font . "Fira Code 22"))))
+
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
 (defalias 'yes-or-no-p 'y-or-n-p)
