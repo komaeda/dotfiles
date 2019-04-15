@@ -153,3 +153,12 @@
 
 (setq inferior-lisp-program "/usr/local/bin/sbcl")
 (setq slime-contribs '(slime-fancy))
+
+;; RUST CONFIGURATION
+
+(add-hook 'rust-mode-hook #'racer-mode)
+(add-hook 'racer-mode-hook #'eldoc-mode)
+(add-hook 'racer-mode-hook #'company-mode)
+(if (eq system-type 'darwin)
+    (setq racer-rust-src-path "")
+  (setq racer-rust-src-path "/home/lu/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src"))

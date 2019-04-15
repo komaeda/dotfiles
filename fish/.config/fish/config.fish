@@ -30,6 +30,7 @@ set GLFW_IM_MODULE ibus
 set LANG en_US.UTF-8
 set LC_ALL en_US.UTF-8
 set LANGUAGE en_US.UTF-8
+set -x RUST_SRC_PATH (rustc --print sysroot)/lib/rustlib/src/rust/src
 
 # General Aliases
 alias editconfig "vim ~/code/komaeda/dotfiles/fish/.config/fish/config.fish; and source ~/.config/fish/config.fish"

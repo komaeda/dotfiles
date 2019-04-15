@@ -17,6 +17,7 @@
 (depends-on "zoom")
 (depends-on "company")
 (depends-on "ag")
+(depends-on "racer")
 
 ;; vcs
 (depends-on "magit")
