@@ -162,3 +162,7 @@
 (if (eq system-type 'darwin)
     (setq racer-rust-src-path "")
   (setq racer-rust-src-path "/home/lu/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src"))
+
+;; ELISP CONFIGURATION
+
+(add-hook 'emacs-lisp-mode-hook #'company-mode)
