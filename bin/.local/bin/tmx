@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+trim() { echo $1; }
+
+if [[ -z "$1" ]]; then
+    echo "Specify session name as the first argument"
+    exit
+fi
+
+base_session="$1"
+tmux_nb=$(trim `tmux ls | grep "^$base_session" | wc -l`)
+if [[ "$tmux_nb" == "0" ]]; then
+    echo "Launching tmux base session $base_session ..."
+    tmux new-session -s $base_session
+else
+    if [[ -z "$TMUX" ]]; then
+        echo "Launching copy of base session $base_session ..."
+        session_id=`date +%Y%m%d%H%M%S`
+        tmux new-session -d -t $base_session -s $session_id
+        if [[ "$2" == "1" ]]; then
+		tmux new-window
+	fi
+	tmux attach-session -t $session_id \; set-option destroy-unattached
+    fi
+fi

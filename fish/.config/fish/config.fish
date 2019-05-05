@@ -63,3 +63,6 @@ end
 if command --search nvim > /dev/null do
   alias vim "nvim"
 end
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/lu/Documents/google-cloud-sdk/path.fish.inc' ]; . '/Users/lu/Documents/google-cloud-sdk/path.fish.inc'; end
