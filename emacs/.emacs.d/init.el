@@ -22,7 +22,7 @@
 (scroll-bar-mode -1)
 
 (if window-system
-    (load-theme 'afternoon t))
+    (load-theme 'alect-light t))
 
 (set-terminal-coding-system 'iso-latin-1)
 

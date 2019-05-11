@@ -65,4 +65,4 @@ if command --search nvim > /dev/null do
 end
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/lu/Documents/google-cloud-sdk/path.fish.inc' ]; . '/Users/lu/Documents/google-cloud-sdk/path.fish.inc'; end
+if [ -f '/home/lu/Documents/google-cloud-sdk/path.fish.inc' ]; . '/home/lu/Documents/google-cloud-sdk/path.fish.inc'; end

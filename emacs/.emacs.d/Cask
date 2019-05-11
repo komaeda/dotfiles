@@ -11,6 +11,7 @@
 ;; visual enhancements
 (depends-on "telephone-line")
 (depends-on "afternoon-theme")
+(depends-on "alect-themes")
 
 ;; productivity
 (depends-on "autopair")
