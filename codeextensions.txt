@@ -1,5 +1,5 @@
 bierner.emojisense
 bungcip.better-toml
-ckolkman.vscode-postgres
 octref.vetur
 rust-lang.rust
+zhuangtongfa.Material-theme
