@@ -17,3 +17,4 @@ emacs/.emacs.d/eshell/
 emacs/.emacs.d/elpa/
 emacs/.emacs.d/session*
 emacs/.emacs.d/transient/
+bin/.local/bin/aeneas*

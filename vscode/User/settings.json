@@ -1,0 +1,9 @@
+{
+    "editor.tabSize": 2,
+    "editor.fontSize": 18,
+    "window.menuBarVisibility": "toggle",
+    "update.mode": "manual",
+    "editor.autoClosingBrackets": "always",
+    "editor.fontFamily": "'Input Mono', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "window.zoomLevel": 0
+}
