@@ -21,6 +21,7 @@ source ~/.config/fish/private.fish
 set PROJECTS ~/code
 set EDITOR "nvim"
 set USER "lu"
+set SHELL /usr/bin/fish
 set -x N_PREFIX ~/n
 set pure_symbol_prompt "\$"
 set GTK_IM_MODULE ibus
@@ -54,6 +55,7 @@ alias gc "g commit"
 alias gaa "g add --all"
 alias gco "g checkout"
 alias gse "g send-email"
+alias zz "sudo zypper"
 
 # Aliases that overwrite other, existing commands
 if command --search hub > /dev/null do
