@@ -1,5 +1,8 @@
+bbenoist.vagrant
 bierner.emojisense
 bungcip.better-toml
+dbaeumer.vscode-eslint
+James-Yu.latex-workshop
 octref.vetur
 rust-lang.rust
 zhuangtongfa.Material-theme
