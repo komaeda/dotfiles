@@ -2,6 +2,7 @@ bbenoist.vagrant
 bierner.emojisense
 bungcip.better-toml
 dbaeumer.vscode-eslint
+eamodio.gitlens
 James-Yu.latex-workshop
 octref.vetur
 rust-lang.rust
