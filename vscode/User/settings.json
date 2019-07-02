@@ -8,10 +8,18 @@
     "window.zoomLevel": 0,
     "workbench.colorTheme": "One Dark Pro",
     "rust-client.channel": "stable",
+<<<<<<< Updated upstream
     "rust-client.rustupPath": "/home/lu/.cargo/bin/rustup",
     "gitlens.views.repositories.location": "scm",
     "gitlens.views.fileHistory.location": "explorer",
     "gitlens.views.lineHistory.location": "explorer",
     "gitlens.views.compare.location": "gitlens",
     "gitlens.views.search.location": "gitlens"
+=======
+    "rust-client.rustupPath": "/Users/lu/.cargo/bin/rustup",
+    "files.insertFinalNewline": true,
+    "files.associations": {
+        "*.html": "html"
+    }
+>>>>>>> Stashed changes
 }

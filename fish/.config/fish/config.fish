@@ -29,9 +29,9 @@ set GTK_IM_MODULE ibus
 set XMODIFIERS @im=ibus
 set QT_IM_MODULE ibus
 set GLFW_IM_MODULE ibus
-set LANG en_US.UTF-8
-set LC_ALL en_US.UTF-8
-set LANGUAGE en_US.UTF-8
+set -x LANG en_US.UTF-8
+set -x LC_ALL en_US.UTF-8
+set -x LANGUAGE en_US.UTF-8
 set -x RUST_SRC_PATH (rustc --print sysroot)/lib/rustlib/src/rust/src
 
 # General Aliases
