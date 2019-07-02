@@ -13,6 +13,7 @@ setpath ~/.cask/bin
 setpath ~/.npm-packages/bin
 setpath ~/n/bin
 setpath ~/code/ph/arcanist/bin
+setpath /snap/bin
 
 # Source private stuff
 source ~/.config/fish/private.fish
