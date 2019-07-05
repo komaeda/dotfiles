@@ -1,0 +1,17 @@
+image=~/mokou.jpg
+
+clock
+
+indicator
+indicator-radius=100
+indicator-thickness=7
+
+effect-blur=7x5
+
+ring-color=266dd3
+ring-ver-color=89ddff
+ring-wrong-color=ff5370
+ring-clear-color=f78c6c
+
+key-hl-color=89ddff
+separator-color=00000000

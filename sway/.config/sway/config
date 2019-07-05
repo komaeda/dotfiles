@@ -1,0 +1,138 @@
+############
+## VARIABLES
+############
+
+# Modifier key, here we use the Meta/Windows key
+set $mod Mod4
+
+# Movement keys
+set $left h
+set $down j
+set $up k
+set $right l
+
+# Your preferred terminal editor
+set $term alacritty
+
+# Your preferred app launcher
+set $menu rofi -show drun
+
+#############
+## APPEARANCE
+#############
+
+# Wallpaper
+output * bg ~/mokou.jpg fill
+
+# Borders
+default_border pixel 2
+default_floating_border none
+smart_borders on
+
+# Font
+font pango:Hack 12
+
+# Focus
+# class                 border  backgr. text    indicator child_border
+client.focused          #266dd3 #266dd3 #ffffff #266dd3   #266dd3
+client.focused_inactive #090b10 #090b10 #ffffff #090b10   #090b10
+client.unfocused        #090b10 #090b10 #888888 #090b10   #090b10
+
+# gaps
+gaps inner 10
+gaps outer 10
+
+# Hide cursor after a while (10 secs)
+seat seat0 hide_cursor 10000
+
+##############
+## KEYBINDINGS
+##############
+
+# Start a terminal
+bindsym $mod+Return exec $term
+
+# Kill focused window
+bindsym $mod+Shift+q kill
+
+# Start the program launcher
+bindsym $mod+space exec $menu 
+
+# Drag floating windows with the mouse
+floating_modifier $mod normal
+
+# Reload the config file
+bindsym $mod+Shift+c reload
+
+# Exit sway
+bindsym $mod+Shift+e exec swaynag -t warning -m 'Do you want to exit sway?' -b 'Yes, exit' 'swaymsg exit'
+
+# change focus
+bindsym $mod+$left focus left
+bindsym $mod+$down focus down
+bindsym $mod+$up focus up
+bindsym $mod+$right focus right
+
+# Move focused window
+bindsym $mod+Shift+$left move left
+bindsym $mod+Shift+$down move down
+bindsym $mod+Shift+$up move up
+bindsym $mod+Shift+$right move right
+
+# Switch to workspace
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+
+# Move to workspace
+bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+2 move container to workspace 2
+bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+4 move container to workspace 4
+
+# Split screen
+bindsym $mod+b splith
+bindsym $mod+v splitv
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# Fullscreen current container
+bindsym $mod+f fullscreen
+
+# Switch between tiling and floating for current container
+bindsym $mod+Shift+d floating toggle
+
+# Switch between tiling area and floating area
+bindsym $mod+d focus mode_toggle
+
+# Screenshots
+bindsym $mod+p exec slurp | grim -t png -c -g - ~/screenshot.png
+bindsym $mod+Shift+p exec grim -t png -c ~/screenshot.png
+
+# Volume
+bindsym XF86AudioMute exec pamixer -t
+bindsym XF86AudioRaiseVolume pamixer -i 5
+bindsym XF86AudioLowerVolume -d 5
+
+#######
+## Idle
+#######
+
+exec swayidle -w timeout 1800 'swaylock -f -C ~/.config/swaylock/config' \
+          timeout 2000 'swaymsg "output * dmps off"' \
+          resume 'swaymsg "output * dpms on"' \
+          before-sleep 'swaylock -f -C ~/.config/swaylock/config'
+
+################
+## Exec on start
+################
+
+# Notifications
+exec mako
+
+# Bar
+exec waybar

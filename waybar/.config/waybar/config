@@ -1,0 +1,17 @@
+{
+  "layer": "top",
+  "modules-left": ["sway/workspaces", "sway/mode"],
+  "modules-center": ["sway/window"],
+  "modules-right": ["network", "clock"],
+  "sway/window": {
+    "max-width": 50
+  },
+  "pulseaudio": {
+    "format": "{volume}%"  
+  },
+  "network": {
+    "interface": "wlp4s0",
+    "format": "connected to {essid}",
+    "format-ethernet": "{bandwidthDownBits}"
+  }
+}
