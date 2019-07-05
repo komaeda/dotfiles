@@ -16,5 +16,6 @@
     "files.insertFinalNewline": true,
     "files.associations": {
         "*.html": "html"
-    }
+    },
+    "git.confirmSync": false
 }
