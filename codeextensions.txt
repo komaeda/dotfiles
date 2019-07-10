@@ -3,6 +3,7 @@ bierner.emojisense
 bungcip.better-toml
 dbaeumer.vscode-eslint
 eamodio.gitlens
+EditorConfig.EditorConfig
 James-Yu.latex-workshop
 octref.vetur
 ronnidc.nunjucks

@@ -55,10 +55,7 @@ alias gc "g commit"
 alias gaa "g add --all"
 alias gco "g checkout"
 alias gse "g send-email"
-# XBPS aliases
-alias xq "xbps-query"
-alias xi "sudo xbps-install"
-alias xr "sudo xbps-reconfigure"
+alias zz "sudo zypper"
 
 # Aliases that overwrite other, existing commands
 if command --search hub > /dev/null do

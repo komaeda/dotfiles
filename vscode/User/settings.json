@@ -17,5 +17,7 @@
     "files.associations": {
         "*.html": "html"
     },
-    "git.confirmSync": false
+    "git.confirmSync": false,
+    "rust-client.rustupPath": "/home/lu/.cargo/bin/rustup",
+    "editor.insertSpaces": false
 }
