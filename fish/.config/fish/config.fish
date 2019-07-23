@@ -55,7 +55,7 @@ alias gc "g commit"
 alias gaa "g add --all"
 alias gco "g checkout"
 alias gse "g send-email"
-alias zz "sudo zypper"
+alias y "sudo zypper"
 
 # Aliases that overwrite other, existing commands
 if command --search hub > /dev/null do
