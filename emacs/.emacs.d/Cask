@@ -1,5 +1,5 @@
-(source gnu)
 (source melpa)
+(source gnu)
 
 ;; base
 (depends-on "ivy")
@@ -33,6 +33,3 @@
 ;; evil plugins
 (depends-on "evil-leader")
 (depends-on "evil-magit")
-
-;; projectile plugins
-(depends-on "counsel-projectile")

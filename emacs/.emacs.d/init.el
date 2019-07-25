@@ -1,18 +1,51 @@
 (package-initialize)
 
-(require 'cask "~/.cask/cask.el")
-(cask-initialize)
+;; load straight, the package manager
+(defvar bootstrap-version)
+(let ((bootstrap-file
+       (expand-file-name "straight/repos/straight.el/bootstrap.el" user-emacs-directory))
+      (bootstrap-version 5))
+  (unless (file-exists-p bootstrap-file)
+    (with-current-buffer
+        (url-retrieve-synchronously
+         "https://raw.githubusercontent.com/raxod502/straight.el/develop/install.el"
+         'silent 'inhibit-cookies)
+      (goto-char (point-max))
+      (eval-print-last-sexp)))
+  (load bootstrap-file nil 'nomessage))
+
+;; load all dependencies (this might take a while on first start)
+(straight-use-package 'ivy)
+(straight-use-package 'counsel)
+(straight-use-package 'evil)
+(straight-use-package 'which-key)
+(straight-use-package 'projectile)
+(straight-use-package 'telephone-line)
+(straight-use-package 'afternoon-theme)
+(straight-use-package 'alect-themes)
+(straight-use-package 'autopair)
+(straight-use-package 'zoom)
+(straight-use-package 'company)
+(straight-use-package 'ag)
+(straight-use-package 'racer)
+(straight-use-package 'magit)
+(straight-use-package 'cask-mode)
+(straight-use-package 'rust-mode)
+(straight-use-package 'markdown-mode)
+(straight-use-package 'slime)
+(straight-use-package 'evil-leader)
+(straight-use-package 'evil-magit)
+(straight-use-package 'counsel-projectile)
 
 (setq standard-indent 2
       scroll-step 1
       make-backup-files nil)
-(setq-default indent-tabs-mode nil)
+(setq-default indent-tabs-mode t)
 (setq-default tab-width 2)
 (setq mouse-wheel-scroll-amount '(1 ((shift) . 1)))
 (setq mouse-wheel-progressive-speed nil)
 (setq backup-directory-alist `((".*" . ,temporary-file-directory)))
 (setq auto-save-file-name-transforms `((".*" ,temporary-file-directory t)))
-(setq explicit-shell-file-name "/bin/fish")
 (setq mac-command-modifier 'control)
 
 (global-hl-line-mode 1)
@@ -27,11 +60,11 @@
 (set-terminal-coding-system 'iso-latin-1)
 
 (setq initial-frame-alist
-      '((font . "Fira Code 16")))
+      '((font . "Input Mono 16")))
 
 (if (eq system-type 'darwin)
     (setq initial-frame-alist
-          '((font . "Fira Code 22"))))
+          '((font . "Input Mono 22"))))
 
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
@@ -51,11 +84,6 @@
 
 (autopair-global-mode)
 (setq js-indent-level 2)
-
-;; LIGATURE SUPPORT
-
-(when (window-system)
-  (set-frame-font "Fira Code"))
 
 ;; IVY CONFIGURATION
 
