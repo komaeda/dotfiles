@@ -9,6 +9,7 @@ setpath ~/.rbenv/bin
 setpath ~/.cargo/bin
 setpath /usr/local/anaconda3/bin
 setpath ~/.local/bin
+setpath ~/.bin
 setpath ~/.cask/bin
 setpath ~/.npm-packages/bin
 setpath ~/n/bin
