@@ -55,7 +55,7 @@
 (scroll-bar-mode -1)
 
 (if window-system
-    (load-theme 'alect-light t))
+    (load-theme 'adwaita t))
 
 (set-terminal-coding-system 'iso-latin-1)
 
@@ -155,7 +155,7 @@
 
 ;; MAGIT CONFIGURATION
 
-(require 'evil-magit) ;; no idea why this has to be required explicitly
+(require 'evil-magit) 
 
 ;; WHICH-KEY CONFIGURATION
 
@@ -194,3 +194,18 @@
 ;; ELISP CONFIGURATION
 
 (add-hook 'emacs-lisp-mode-hook #'company-mode)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-safe-themes
+   (quote
+    ("04dd0236a367865e591927a3810f178e8d33c372ad5bfef48b5ce90d4b476481" "c335adbb7d7cb79bc34de77a16e12d28e6b927115b992bccc109fb752a365c72" default)))
+ '(delete-selection-mode nil))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
