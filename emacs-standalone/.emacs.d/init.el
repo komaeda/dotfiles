@@ -48,7 +48,6 @@
 (setq auto-save-file-name-transforms `((".*" ,temporary-file-directory t)))
 (setq mac-command-modifier 'control)
 
-(global-hl-line-mode 1)
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 (auto-compression-mode t)

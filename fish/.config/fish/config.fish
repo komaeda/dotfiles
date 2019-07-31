@@ -14,6 +14,7 @@ setpath ~/.cask/bin
 setpath ~/.npm-packages/bin
 setpath ~/n/bin
 setpath /snap/bin
+setpath ~/.emacs.d/bin
 
 # Source private stuff
 source ~/.config/fish/private.fish
