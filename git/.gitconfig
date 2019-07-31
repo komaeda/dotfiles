@@ -4,7 +4,6 @@
 	signingkey = marisa@mokou.zone
 [core]
 	editor = nvim
-  pager = diff-so-fancy | less --tabs=4 -RFX
 [push]
 	default = simple
 [pull]
